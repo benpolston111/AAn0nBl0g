@@ -73,8 +73,8 @@ paginate = 5
     title = "AAn0nAAr0n"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
+      subtitle = "AAn0nBl0g"
+      owner = "AAn0nAAr0n"
       keywords = ""
       copyright = ""
       menuMore = "Show more"
@@ -90,13 +90,6 @@ paginate = 5
       [languages.en.params.logo]
         logoText = "AAn0nAAr0n"
         logoHomeLink = "/"
-
-      [languages.en.menu]
-        [[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about"
-
 
 [services]
   [services.disqus]
