@@ -1,5 +1,5 @@
 ---
-title: To There and Back Again
+title: There and Back Again
 date: 2025-01-30
 draft: false
 tags:
