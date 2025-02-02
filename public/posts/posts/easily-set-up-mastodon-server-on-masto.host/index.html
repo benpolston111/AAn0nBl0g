@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Easily Set-up Mastodon Server On Masto.host :: AAn0nAAr0n</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Host Mastodon on Masto.host Down With Elon I was never a huge bird app user, mostly because I&rsquo;ve never really been a social media person. Seeing the owner&rsquo;s recent actions has made me want to get involved somehow. I figure what a better way than aiming for his pockets via promotion of the Fediverse against traditional social media networks.
+I know&hellip;I know&hellip; &ldquo;Why don&rsquo;t you just self-host? You&rsquo;d save yourself a little money&rdquo;. First, I was running on zero sleep when I did this and wanted something a little easier. Second, I live in West Virginia and my ISP&rsquo;s up-time is atrocious. Sue me! (Don&rsquo;t actually, I have no moneys for you or attorneys)
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/old.terminal.min.4b367d85d0d0061435650561285afed36c46a7cf8dc6d7ed5642d98e589fa622.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.80a4b48a9c99b81939512c09479e7a00472d8d3b191e40068a5bd10132c5f894.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="AAn0nAAr0n" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Easily Set-up Mastodon Server On Masto.host">
+<meta property="og:description" content="Host Mastodon on Masto.host Down With Elon I was never a huge bird app user, mostly because I&rsquo;ve never really been a social media person. Seeing the owner&rsquo;s recent actions has made me want to get involved somehow. I figure what a better way than aiming for his pockets via promotion of the Fediverse against traditional social media networks.
+I know&hellip;I know&hellip; &ldquo;Why don&rsquo;t you just self-host? You&rsquo;d save yourself a little money&rdquo;. First, I was running on zero sleep when I did this and wanted something a little easier. Second, I live in West Virginia and my ISP&rsquo;s up-time is atrocious. Sue me! (Don&rsquo;t actually, I have no moneys for you or attorneys)
+" />
+<meta property="og:url" content="//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/" />
+<meta property="og:site_name" content="AAn0nAAr0n" />
+
+  <meta property="og:image" content="//localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-02-01 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container full">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    AAn0nAAr0n
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/">Easily Set-up Mastodon Server On Masto.host</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-02-01</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/aan0naar0n/">AAn0nAAr0n</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/blog/">blog</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/tech/">tech</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/mastodon/">Mastodon</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="host-mastodon-on-mastohost">Host Mastodon on Masto.host<a href="#host-mastodon-on-mastohost" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="down-with-elon">Down With Elon<a href="#down-with-elon" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I was never a huge bird app user, mostly because I&rsquo;ve never really been a social media person. Seeing the owner&rsquo;s recent actions has made me want to get involved somehow. I figure what a better way than aiming for his pockets via promotion of the Fediverse against traditional social media networks.</p>
+<p>I know&hellip;I know&hellip; &ldquo;Why don&rsquo;t you just self-host? You&rsquo;d save yourself a little money&rdquo;. First, I was running on zero sleep when I did this and wanted something a little easier. Second, I live in West Virginia and my ISP&rsquo;s up-time is atrocious. Sue me! (Don&rsquo;t actually, I have no moneys for you or attorneys)</p>
+<h2 id="heres-the-process">Here&rsquo;s The Process<a href="#heres-the-process" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>We&rsquo;re gonna need a small investment (all under $20):</p>
+<ul>
+<li>Domain - I bought mine from <a href="https://namecheap.com">namecheap.com</a></li>
+<li>Cloudflare Free Account - Just go to <a href="https://cloudflare.com">cloudflare.com</a> and sign up</li>
+<li>Masto.host Server - Plans start at $6/month, that&rsquo;s what I went with and we can upgrade later</li>
+<li>Time and Patience - Some of this just takes time, be patient and this should work just fine</li>
+</ul>
+<h3 id="step-1">Step 1<a href="#step-1" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="buying-your-domain">Buying your domain<a href="#buying-your-domain" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><img src="https://i.ibb.co/sdPTJPB1/namecheap.png" alt=""></p>
+<p>This is where we search for domains on Namecheap. Not a sponsor, just cheaper than buying directly from Cloudflare.
+From what I can tell with my limited experience of the platform so far, common tld&rsquo;s are .social, .chat, and other social-centric names, but you should be safe to pick anything.</p>
+<p><img src="https://i.ibb.co/7tNTxpGp/namecheap-select.png" alt=""></p>
+<p>Find one at a decent price, and checkout like you would normally on any other platform.</p>
+<h3 id="step-2">Step 2<a href="#step-2" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="starting-domain-transfer">Starting domain transfer<a href="#starting-domain-transfer" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><img src="https://i.ibb.co/bjhBr9wm/cloudflare-main.png" alt=""></p>
+<p>After you&rsquo;ve bought your domain, log into cloudflare and click &ldquo;Add a domain&rdquo; (if you haven&rsquo;t made an account yet, do it now).</p>
+<p><img src="https://i.ibb.co/46vfMbC/cloudflare-adddomain.png" alt=""></p>
+<p>Enter your domain and click continue.</p>
+<p><img src="https://i.ibb.co/rRJdGfTx/cloudflare-plan.png" alt=""></p>
+<p>Select Free Plan and click continue.</p>
+<p><img src="https://i.ibb.co/Mkw2342Z/cloudflare-activation.png" alt=""></p>
+<p>Click &ldquo;Continue to activation&rdquo;.</p>
+<p><img src="https://i.ibb.co/ccsmKZPR/cloudflare-confirm.png" alt=""></p>
+<p>Click &ldquo;Confirm&rdquo;. We&rsquo;ll handle the DNS records in a minute.</p>
+<h3 id="step-3">Step 3<a href="#step-3" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="changing-nameservers">Changing nameservers<a href="#changing-nameservers" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><img src="https://i.ibb.co/G3PwTQ6D/cloudflare-nameservers.png" alt=""></p>
+<p>We&rsquo;re gonna copy these nameserver addresses to namecheap so we can get the transfer underway.</p>
+<p><img src="https://i.ibb.co/fWjP1rg/namecheap-transfer.png" alt=""></p>
+<p>Go back to namecheap, click domain list, and scroll down to nameservers. Here we select Custom DNS and paste our nameserver addresses.</p>
+<p>Now here&rsquo;s where the time and patience comes in. Nameservers can take up to 48 hours to complete transfer. This can be a frustrating waiting process, but I promise it almost never takes that long. Cloudflare should send you an email when this process is over so you don&rsquo;t have to stare at your screen (though I always do). As soon as it&rsquo;s transferred, you&rsquo;re ready for the next step!</p>
+<h3 id="step-4">Step 4<a href="#step-4" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="finally-getting-to-mastodon">Finally getting to Mastodon<a href="#finally-getting-to-mastodon" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><img src="https://i.ibb.co/0VRZ5QJ8/mastohost-start.png" alt=""></p>
+<p>Next, let&rsquo;s go to Masto.host. You can feel free to start on a larger server, but for my current needs this one works.</p>
+<p><img src="https://i.ibb.co/tTWrQFTN/mastohost-domain.png" alt=""></p>
+<p>Click &ldquo;Your domain&rdquo;.</p>
+<p><img src="https://i.ibb.co/Lh9zCnVF/mastohost-input.png" alt=""></p>
+<p>Enter your domain and click &ldquo;Continue&rdquo;.</p>
+<p><img src="https://i.ibb.co/Cyg1RRn/mastohost-notice.png" alt=""></p>
+<p>Make sure you don&rsquo;t have anything else currently hosted on your domain, or just use a subdomain. Click &ldquo;Use your.domain&rdquo;.</p>
+<p><img src="https://i.ibb.co/Ld0cW15K/mastohost-subscribe.png" alt=""></p>
+<p>Click &ldquo;Subscribe&rdquo; and go through the payment process.</p>
+<p><img src="https://i.ibb.co/r2vC68rK/mastohost-dns.png" alt=""></p>
+<p>After payment is completed, you should see the DNS record we&rsquo;re gonna input over in Cloudflare. So let&rsquo;s hop back over there.</p>
+<p><img src="https://i.ibb.co/x8BddYGk/cloudflare-finalsteps.png" alt=""></p>
+<p>On your account dashboard, click your domain.</p>
+<p><img src="https://i.ibb.co/3mhC7Zx2/cloudflare-dns.png" alt=""></p>
+<p>Click &ldquo;DNS Records&rdquo;.</p>
+<p><img src="https://i.ibb.co/23gDsm1z/cloudflare-dnsman.png" alt=""></p>
+<p>Enter the DNS record details from Masto.host here, then click &ldquo;Save&rdquo;. This may take 15-30 minutes, but you should then be able to access your domain in the browser. That&rsquo;s what we&rsquo;ll do next.</p>
+<h3 id="step-5">Step 5<a href="#step-5" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="finishing-steps">Finishing steps<a href="#finishing-steps" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><img src="https://i.ibb.co/9mzdHzHR/masto-accountcreation.png" alt=""></p>
+<p>Go to your domain in the browser and click &ldquo;Create Account&rdquo;. Fill in these details and click &ldquo;Request an account&rdquo;. Then back to Masto.host to make the new account an owner/admin.</p>
+<p><img src="https://i.ibb.co/p61wXsv7/mastohost-portal.png" alt=""></p>
+<p>On Masto.host, click &ldquo;Change User Role&rdquo;.</p>
+<p><img src="https://i.ibb.co/cS2LF5wC/mastohost-admin.png" alt=""></p>
+<p>Enter the account username you just created, then click &ldquo;Change User Role&rdquo;.</p>
+<p>That&rsquo;s it! Log in, administrate a little bit, follow some people and hashtags, and of course have fun! I&rsquo;ve been enjoying my time on Mastodon, and it may take some time to get &ldquo;Federated&rdquo; and build your platform, but I think it is well worth it.</p>
+<h3 id="bonus">Bonus<a href="#bonus" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="relays">Relays<a href="#relays" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>When you first spawn a Mastodon Instance, it may seem like a very lonely place. With Mastodon you have to build your own community, and it&rsquo;s not a quick process. Relays make your job easier by federating with collections of other servers. Here are some tools I found useful for relays:</p>
+<p><a href="https://relaylist.com/">relaylist.com</a> - List of relays</p>
+<p><a href="https://relay.fedi.buzz/">relay.fedi.buzz</a> - Relays from hashtag or by instance</p>
+<h4 id="blocklist">Blocklist<a href="#blocklist" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Help keep your users safe.</p>
+<p><a href="https://github.com/gardenfence/blocklist">Garden Fence</a> - Github hosted csv files to block known Nazis, Trolls, Conspiracy Theorists and alike.</p>
+<h4 id="themes">Themes<a href="#themes" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Give your instance a unique look.</p>
+<p><a href="https://github.com/nileane/TangerineUI-for-Mastodon">TangerineUI-for-Mastodon</a> - I use the purple one!</p>
+<p><a href="https://github.com/ronilaukkarinen/mastodon-bird-ui">Mastodon-Bird-UI</a> - Resembles Twitter (yuck, but to each their own)</p>
+<h4 id="rss">RSS<a href="#rss" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>RSS tools for Mastodon.</p>
+<p><a href="https://rss-parrot.net/">RSS-Parrot</a> - Turn Mastodon into your feed reader</p>
+<h4 id="learn-more">Learn More<a href="#learn-more" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Learning resources for Mastodon and the Fediverse.</p>
+<p><a href="https://fedi.tips/">Fedi.tips</a> - Best resource I know of for getting started on Mastodon</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="//localhost:1313/posts/posts/there-and-back-again/" class="button inline next">
+        There and Back Again
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    <!DOCTYPE html>
+<html>
+  <head>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "aan0naar0n" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </head>
+  &lt;<body>
+    
+  </body>
+</html>
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

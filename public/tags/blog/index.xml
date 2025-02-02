@@ -2,17 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on AAn0nAAr0n</title>
-    <link>/tags/blog/</link>
+    <link>//localhost:1313/tags/blog/</link>
     <description>Recent content in Blog on AAn0nAAr0n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easily Set-up Mastodon Server On Masto.host</title>
+      <link>//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/</guid>
+      <description>&lt;h1 id=&#34;host-mastodon-on-mastohost&#34;&gt;Host Mastodon on Masto.host&lt;/h1&gt;
+&lt;h2 id=&#34;down-with-elon&#34;&gt;Down With Elon&lt;/h2&gt;
+&lt;p&gt;I was never a huge bird app user, mostly because I&amp;rsquo;ve never really been a social media person. Seeing the owner&amp;rsquo;s recent actions has made me want to get involved somehow. I figure what a better way than aiming for his pockets via promotion of the Fediverse against traditional social media networks.&lt;/p&gt;
+&lt;p&gt;I know&amp;hellip;I know&amp;hellip; &amp;ldquo;Why don&amp;rsquo;t you just self-host? You&amp;rsquo;d save yourself a little money&amp;rdquo;. First, I was running on zero sleep when I did this and wanted something a little easier. Second, I live in West Virginia and my ISP&amp;rsquo;s up-time is atrocious. Sue me! (Don&amp;rsquo;t actually, I have no moneys for you or attorneys)&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;host-mastodon-on-mastohost&#34;&gt;Host Mastodon on Masto.host&lt;/h1&gt;
+&lt;h2 id=&#34;down-with-elon&#34;&gt;Down With Elon&lt;/h2&gt;
+&lt;p&gt;I was never a huge bird app user, mostly because I&amp;rsquo;ve never really been a social media person. Seeing the owner&amp;rsquo;s recent actions has made me want to get involved somehow. I figure what a better way than aiming for his pockets via promotion of the Fediverse against traditional social media networks.&lt;/p&gt;
+&lt;p&gt;I know&amp;hellip;I know&amp;hellip; &amp;ldquo;Why don&amp;rsquo;t you just self-host? You&amp;rsquo;d save yourself a little money&amp;rdquo;. First, I was running on zero sleep when I did this and wanted something a little easier. Second, I live in West Virginia and my ISP&amp;rsquo;s up-time is atrocious. Sue me! (Don&amp;rsquo;t actually, I have no moneys for you or attorneys)&lt;/p&gt;
+&lt;h2 id=&#34;heres-the-process&#34;&gt;Here&amp;rsquo;s The Process&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;re gonna need a small investment (all under $20):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain - I bought mine from &lt;a href=&#34;https://namecheap.com&#34;&gt;namecheap.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cloudflare Free Account - Just go to &lt;a href=&#34;https://cloudflare.com&#34;&gt;cloudflare.com&lt;/a&gt; and sign up&lt;/li&gt;
+&lt;li&gt;Masto.host Server - Plans start at $6/month, that&amp;rsquo;s what I went with and we can upgrade later&lt;/li&gt;
+&lt;li&gt;Time and Patience - Some of this just takes time, be patient and this should work just fine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;h4 id=&#34;buying-your-domain&#34;&gt;Buying your domain&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/sdPTJPB1/namecheap.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is where we search for domains on Namecheap. Not a sponsor, just cheaper than buying directly from Cloudflare.
+From what I can tell with my limited experience of the platform so far, common tld&amp;rsquo;s are .social, .chat, and other social-centric names, but you should be safe to pick anything.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/7tNTxpGp/namecheap-select.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Find one at a decent price, and checkout like you would normally on any other platform.&lt;/p&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;h4 id=&#34;starting-domain-transfer&#34;&gt;Starting domain transfer&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/bjhBr9wm/cloudflare-main.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After you&amp;rsquo;ve bought your domain, log into cloudflare and click &amp;ldquo;Add a domain&amp;rdquo; (if you haven&amp;rsquo;t made an account yet, do it now).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/46vfMbC/cloudflare-adddomain.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enter your domain and click continue.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/rRJdGfTx/cloudflare-plan.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Select Free Plan and click continue.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Mkw2342Z/cloudflare-activation.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click &amp;ldquo;Continue to activation&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/ccsmKZPR/cloudflare-confirm.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click &amp;ldquo;Confirm&amp;rdquo;. We&amp;rsquo;ll handle the DNS records in a minute.&lt;/p&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;h4 id=&#34;changing-nameservers&#34;&gt;Changing nameservers&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/G3PwTQ6D/cloudflare-nameservers.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re gonna copy these nameserver addresses to namecheap so we can get the transfer underway.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/fWjP1rg/namecheap-transfer.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Go back to namecheap, click domain list, and scroll down to nameservers. Here we select Custom DNS and paste our nameserver addresses.&lt;/p&gt;
+&lt;p&gt;Now here&amp;rsquo;s where the time and patience comes in. Nameservers can take up to 48 hours to complete transfer. This can be a frustrating waiting process, but I promise it almost never takes that long. Cloudflare should send you an email when this process is over so you don&amp;rsquo;t have to stare at your screen (though I always do). As soon as it&amp;rsquo;s transferred, you&amp;rsquo;re ready for the next step!&lt;/p&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
+&lt;h4 id=&#34;finally-getting-to-mastodon&#34;&gt;Finally getting to Mastodon&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/0VRZ5QJ8/mastohost-start.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Next, let&amp;rsquo;s go to Masto.host. You can feel free to start on a larger server, but for my current needs this one works.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/tTWrQFTN/mastohost-domain.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click &amp;ldquo;Your domain&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Lh9zCnVF/mastohost-input.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enter your domain and click &amp;ldquo;Continue&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Cyg1RRn/mastohost-notice.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Make sure you don&amp;rsquo;t have anything else currently hosted on your domain, or just use a subdomain. Click &amp;ldquo;Use your.domain&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Ld0cW15K/mastohost-subscribe.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click &amp;ldquo;Subscribe&amp;rdquo; and go through the payment process.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/r2vC68rK/mastohost-dns.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After payment is completed, you should see the DNS record we&amp;rsquo;re gonna input over in Cloudflare. So let&amp;rsquo;s hop back over there.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/x8BddYGk/cloudflare-finalsteps.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On your account dashboard, click your domain.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/3mhC7Zx2/cloudflare-dns.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click &amp;ldquo;DNS Records&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/23gDsm1z/cloudflare-dnsman.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enter the DNS record details from Masto.host here, then click &amp;ldquo;Save&amp;rdquo;. This may take 15-30 minutes, but you should then be able to access your domain in the browser. That&amp;rsquo;s what we&amp;rsquo;ll do next.&lt;/p&gt;
+&lt;h3 id=&#34;step-5&#34;&gt;Step 5&lt;/h3&gt;
+&lt;h4 id=&#34;finishing-steps&#34;&gt;Finishing steps&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/9mzdHzHR/masto-accountcreation.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Go to your domain in the browser and click &amp;ldquo;Create Account&amp;rdquo;. Fill in these details and click &amp;ldquo;Request an account&amp;rdquo;. Then back to Masto.host to make the new account an owner/admin.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/p61wXsv7/mastohost-portal.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On Masto.host, click &amp;ldquo;Change User Role&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/cS2LF5wC/mastohost-admin.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enter the account username you just created, then click &amp;ldquo;Change User Role&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it! Log in, administrate a little bit, follow some people and hashtags, and of course have fun! I&amp;rsquo;ve been enjoying my time on Mastodon, and it may take some time to get &amp;ldquo;Federated&amp;rdquo; and build your platform, but I think it is well worth it.&lt;/p&gt;
+&lt;h3 id=&#34;bonus&#34;&gt;Bonus&lt;/h3&gt;
+&lt;h4 id=&#34;relays&#34;&gt;Relays&lt;/h4&gt;
+&lt;p&gt;When you first spawn a Mastodon Instance, it may seem like a very lonely place. With Mastodon you have to build your own community, and it&amp;rsquo;s not a quick process. Relays make your job easier by federating with collections of other servers. Here are some tools I found useful for relays:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://relaylist.com/&#34;&gt;relaylist.com&lt;/a&gt; - List of relays&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://relay.fedi.buzz/&#34;&gt;relay.fedi.buzz&lt;/a&gt; - Relays from hashtag or by instance&lt;/p&gt;
+&lt;h4 id=&#34;blocklist&#34;&gt;Blocklist&lt;/h4&gt;
+&lt;p&gt;Help keep your users safe.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gardenfence/blocklist&#34;&gt;Garden Fence&lt;/a&gt; - Github hosted csv files to block known Nazis, Trolls, Conspiracy Theorists and alike.&lt;/p&gt;
+&lt;h4 id=&#34;themes&#34;&gt;Themes&lt;/h4&gt;
+&lt;p&gt;Give your instance a unique look.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/nileane/TangerineUI-for-Mastodon&#34;&gt;TangerineUI-for-Mastodon&lt;/a&gt; - I use the purple one!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ronilaukkarinen/mastodon-bird-ui&#34;&gt;Mastodon-Bird-UI&lt;/a&gt; - Resembles Twitter (yuck, but to each their own)&lt;/p&gt;
+&lt;h4 id=&#34;rss&#34;&gt;RSS&lt;/h4&gt;
+&lt;p&gt;RSS tools for Mastodon.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rss-parrot.net/&#34;&gt;RSS-Parrot&lt;/a&gt; - Turn Mastodon into your feed reader&lt;/p&gt;
+&lt;h4 id=&#34;learn-more&#34;&gt;Learn More&lt;/h4&gt;
+&lt;p&gt;Learning resources for Mastodon and the Fediverse.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://fedi.tips/&#34;&gt;Fedi.tips&lt;/a&gt; - Best resource I know of for getting started on Mastodon&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>There and Back Again</title>
-      <link>/posts/posts/there-and-back-again/</link>
+      <link>//localhost:1313/posts/posts/there-and-back-again/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>/posts/posts/there-and-back-again/</guid>
+      <guid>//localhost:1313/posts/posts/there-and-back-again/</guid>
       <description>&lt;h1 id=&#34;starting-a-new-thing&#34;&gt;Starting a new thing.&lt;/h1&gt;
 &lt;p&gt;Welcome to anyone who stumbled upon my humble abode within cyberspace! This is where I&amp;rsquo;ll be sharing the things I&amp;rsquo;m studying, and anything else I feel is interesting enough to make a post about.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgflip.com/4wrt7r.jpg&#34; alt=&#34;welcome cat&#34;&gt;&lt;/p&gt;</description>
