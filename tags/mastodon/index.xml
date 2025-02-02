@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AAn0nAAr0n</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on AAn0nAAr0n</description>
+    <title>Mastodon on AAn0nAAr0n</title>
+    <link>//localhost:1313/tags/mastodon/</link>
+    <description>Recent content in Mastodon on AAn0nAAr0n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Easily Set-up Mastodon Server On Masto.host</title>
       <link>//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/</link>
@@ -102,21 +102,6 @@ From what I can tell with my limited experience of the platform so far, common t
 &lt;h4 id=&#34;learn-more&#34;&gt;Learn More&lt;/h4&gt;
 &lt;p&gt;Learning resources for Mastodon and the Fediverse.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://fedi.tips/&#34;&gt;Fedi.tips&lt;/a&gt; - Best resource I know of for getting started on Mastodon&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>There and Back Again</title>
-      <link>//localhost:1313/posts/posts/there-and-back-again/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/posts/posts/there-and-back-again/</guid>
-      <description>&lt;h1 id=&#34;starting-a-new-thing&#34;&gt;Starting a new thing.&lt;/h1&gt;
-&lt;p&gt;Welcome to anyone who stumbled upon my humble abode within cyberspace! This is where I&amp;rsquo;ll be sharing the things I&amp;rsquo;m studying, and anything else I feel is interesting enough to make a post about.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgflip.com/4wrt7r.jpg&#34; alt=&#34;welcome cat&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;starting-a-new-thing&#34;&gt;Starting a new thing.&lt;/h1&gt;
-&lt;p&gt;Welcome to anyone who stumbled upon my humble abode within cyberspace! This is where I&amp;rsquo;ll be sharing the things I&amp;rsquo;m studying, and anything else I feel is interesting enough to make a post about.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgflip.com/4wrt7r.jpg&#34; alt=&#34;welcome cat&#34;&gt;&lt;/p&gt;
 </content>
     </item>
     
