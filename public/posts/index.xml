@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on AAn0nAAr0n</title>
-    <link>//localhost:1313/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on AAn0nAAr0n</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Easily Set-up Mastodon Server On Masto.host</title>
-      <link>//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/</link>
+      <link>/posts/posts/easily-set-up-mastodon-server-on-masto.host/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/posts/easily-set-up-mastodon-server-on-masto.host/</guid>
+      <guid>/posts/posts/easily-set-up-mastodon-server-on-masto.host/</guid>
       <description>&lt;h1 id=&#34;host-mastodon-on-mastohost&#34;&gt;Host Mastodon on Masto.host&lt;/h1&gt;
 &lt;h2 id=&#34;down-with-elon&#34;&gt;Down With Elon&lt;/h2&gt;
 &lt;p&gt;I was never a huge bird app user, mostly because I&amp;rsquo;ve never really been a social media person. Seeing the owner&amp;rsquo;s recent actions has made me want to get involved somehow. I figure what a better way than aiming for his pockets via promotion of the Fediverse against traditional social media networks.&lt;/p&gt;
@@ -107,10 +107,10 @@ From what I can tell with my limited experience of the platform so far, common t
     
     <item>
       <title>There and Back Again</title>
-      <link>//localhost:1313/posts/posts/there-and-back-again/</link>
+      <link>/posts/posts/there-and-back-again/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/posts/there-and-back-again/</guid>
+      <guid>/posts/posts/there-and-back-again/</guid>
       <description>&lt;h1 id=&#34;starting-a-new-thing&#34;&gt;Starting a new thing.&lt;/h1&gt;
 &lt;p&gt;Welcome to anyone who stumbled upon my humble abode within cyberspace! This is where I&amp;rsquo;ll be sharing the things I&amp;rsquo;m studying, and anything else I feel is interesting enough to make a post about.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgflip.com/4wrt7r.jpg&#34; alt=&#34;welcome cat&#34;&gt;&lt;/p&gt;</description>
